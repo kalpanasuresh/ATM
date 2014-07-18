@@ -1,0 +1,38 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body style=" padding-right: 0px;  padding-left: 0px; padding-bottom: 0px; margin: 0px;  padding-top: 0px; background-color: #ffffff; width: 100%; height: 100%;">
+    <form id="form1" runat="server">
+   
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%; border-right: navy 9px solid; border-top: navy 9px solid; margin: 0px; border-left: navy 9px solid; border-bottom: navy 9px solid;">
+            <tr>
+                <td style="width: 100%; height: 31px; text-align: center" valign="top">
+                   
+                        <table  style="width: 100%; border-top-style: none; border-right-style: none; border-left-style: none; background-color: lemonchiffon; border-bottom-style: none">
+                            <tr>
+                                <td align="right" bgcolor="lemonchiffon" colspan="3" style="height: 20px; text-align: left"
+                                    valign="middle">
+                                    <asp:Image ID="Image1" runat="server" Height="46px" ImageUrl="~/bankingbtn.gif" Width="69px" ImageAlign="Top" />
+                                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Garamond" Font-Size="24pt"
+                                        Text="Welcome to First American Bank"></asp:Label>&nbsp;</td>
+                            </tr>
+                        </table>
+                
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100%; height: 100%; margin: 0px;" valign="top">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                </td>
+            </tr>
+        </table>
+   
+    </form>
+</body>
+</html>
